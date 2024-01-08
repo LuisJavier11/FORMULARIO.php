@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario en PHP</title>
+    <style>
+        body {
+            background-color: #68FFB3;
+            color: #000000;
+            margin-left: 50px;
+            margin-top: 70px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <meta charset="utf-8">
+
+<h2>Formulario en PHP</h2>
+<div align="justify">
+    Un formulario en PHP o cualquier otro lenguaje sirve para enviar datos (ingresados por un usuario) a un servidor con el fin de procesarlos y/o guardarlos en una base de datos.
+</div>
+
+<hr>
+
+<form action="registros.php" method="POST" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>Clave:</td>
+            <td><input type="text" name="clave"></td>  
+           </tr>
+           <div class="conteiner">
+            <img src="Imagen/im3.jpg" class="imagen">
+          </div>
+         
+           <tr>
+            <td>Descripcion:</td>
+            <td><input type="text" name="descripcion"></td>
+           </tr>
+           <tr>
+           <td>Precio:</td>
+           <td><input type="text" name="precio"></td>
+           </tr><br>
+           <tr>
+            <td>Marca:</td>
+            <td><select id="marca" name="marca">
+             <option value="Nike">Nike</option>
+             <option value="Addidas">Addidas</option>
+             <option value="Under">Under Armour</option>
+             <option value="Puma">Puma</option>
+             <option value="Patito">Patito</option>
+             </td>
+            </select>
+           </tr>
+           </table>
+           
+           <tr>
+            <td>Talla:</td>
+            <label style="margin-left: 47px;"><input type="radio" name="talla" value="s/ch">s/ch</label>
+            <label><input type="radio" name="talla" value="g/GD">g/GD</label><br>
+            <label style="margin-left: 85px;"><input type="radio" name="talla" value="m/e">m/e</label>
+            <label style="margin-left: 3px;"><input type="radio" name="talla" value="ex">ex/extra</label><br>
+           </tr>
+           <tr>
+            <td>Descuento:</td>
+            <label style="margin-left: 10px;"><input type="checkbox" name="desc5" id=desc5 value="5%"">5%</label>
+            <label style="margin-left: 8px;"><input type="checkbox" name="desc30" id=desc30 value="30%">30%</label><br>
+            <label style="margin-left: 86px;"><input type="checkbox" name="desc10" id=desc10 value="10%">10%</label>
+            <label><input type="checkbox" name="desc50" id=desc50 value="50%">50%</label><br>
+            <label style="margin-left: 86px;"><input type="checkbox" name="desc15" id=desc15 value="15%">15%</label>
+            <label><input type="checkbox" name="desc70" id=desc70 value="70%">70%</label>
+           </tr>
+           <tr>
+           <br>
+           <br>
+         <td align = "center"><input type="submit" value="Guardar..."></td>
+         <td align = "center"><input type="reset" value="Eliminar..."></td>
+       </tr>
+       
+
+    </table>
+</form>
+
+</body>
+</html>
